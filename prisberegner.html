@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prisberegner — Melisa Renholdsservice AS | Veiledende prisestimat på 60 sekunder</title>
+<meta name="description" content="Beregn et veiledende prisestimat for næringsrenhold i Oslo på under 60 sekunder. Velg tjeneste, areal og frekvens — vi ringer deg tilbake innen 24 timer.">
+<meta property="og:title" content="Prisberegner — Melisa Renholdsservice AS">
+<meta property="og:description" content="Veiledende prisestimat på 60 sekunder. Ingen forpliktelser — vi tar kontakt for gratis befaring.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230B3D3A'/%3E%3Crect x='6' y='6' width='20' height='20' fill='%23C8F04A'/%3E%3C/svg%3E">
+</head>
+<body>
+<div class="utility">
+  <div class="wrap">
+    <a href="tel:+4745021429">Tlf: 450 21 429</a>
+    <span>Man–fre 08:00–17:00</span>
+    <span>Københavngata 14A, 0566 Oslo</span>
+  </div>
+</div>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="Melisa Renholdsservice AS — forsiden">
+      <span class="brand-eyebrow">B2B Renholdsservice Oslo · Siden 2008</span>
+      <span class="brand-name">MELISA</span>
+      <span class="brand-sub">RENHOLDSSERVICE AS</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav">Meny</button>
+    <nav class="main-nav" id="mainNav" aria-label="Hovedmeny">
+      <a href="index.html">Hjem</a>
+      <a href="tjenester.html">Tjenester</a>
+      <a href="prisberegner.html" aria-current="page">Prisberegner</a>
+      <a href="om-oss.html">Om oss</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+    <a class="btn btn-lime header-cta" href="prisberegner.html">Få prisestimat</a>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero ice-hero" style="padding-bottom:48px">
+    <div class="wrap">
+      <p class="eyebrow">Veiledende priskalkyle · Oslo og omegn · Næringsdrift</p>
+      <h1>Prisberegner for næringsrenhold</h1>
+      <p class="lede">Beregn et veiledende prisestimat på under 60 sekunder. Ingen forpliktelser — vi tar kontakt for gratis befaring.</p>
+      <div class="stat-row">
+        <div class="stat"><b>17+</b><span>År erfaring i Oslo</span></div>
+        <div class="stat"><b>24 t</b><span>Svar på henvendelser</span></div>
+        <div class="stat"><b>07</b><span>Tjenester å velge mellom</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ice" style="padding-top:48px">
+    <div class="wrap calc-wrap">
+      <div id="calculator">
+        <div class="progress-block">
+          <div class="progress-top">
+            <span class="step-label" id="stepLabel">Trinn 01 · Velg tjeneste</span>
+            <span class="step-count" id="stepCount">Steg 1 av 3</span>
+          </div>
+          <div class="progress-track" role="progressbar" aria-valuemin="1" aria-valuemax="3" aria-valuenow="1" aria-label="Fremdrift i prisberegneren"><div class="progress-fill" id="progressFill"></div></div>
+          <div class="stepper" aria-hidden="true">
+            <span class="active">1. Tjeneste</span>
+            <span>2. Bygg og omfang</span>
+            <span>3. Opplysninger og estimat</span>
+          </div>
+        </div>
+
+        <form id="calcForm" novalidate>
+          <!-- STEG 1 -->
+          <div class="calc-step active" data-step="1">
+            <p class="eyebrow">Steg 1 av 3</p>
+            <h2>01 // Spesifiser kategori</h2>
+            <p class="step-sub">Obligatorisk valg for kalibrering</p>
+            <div class="service-grid" role="group" aria-label="Velg tjeneste">
+              <button type="button" class="service-pick" data-service="daglig" aria-pressed="false">
+                <span class="pick-check" aria-hidden="true">✓</span>
+                <strong>Daglig renhold</strong>
+                <span>Faste renholdsavtaler tilpasset kontorer, næringsbygg og fellesarealer med definerte frekvensplaner.</span>
+                <span class="pick-tags">Fast avtale · Kontor og næringsbygg</span>
+              </button>
+              <button type="button" class="service-pick" data-service="hoved" aria-pressed="false">
+                <span class="pick-check" aria-hidden="true">✓</span>
+                <strong>Hovedrengjøring</strong>
+                <span>Periodisk dybderengjøring fra gulv til tak, inkludert ventilasjonslister, belysning og sanitærsoner.</span>
+                <span class="pick-tags">Halvårlig / årlig · Dybderengjøring</span>
+              </button>
+              <button type="button" class="service-pick" data-service="bygg" aria-pressed="false">
+                <span class="pick-check" aria-hidden="true">✓</span>
+                <strong>Byggvask (RTB)</strong>
+                <span>Rent Tørt Bygg-leveranse for nybygg og rehabiliteringsprosjekter før teknisk overtakelse.</span>
+                <span class="pick-tags">Rent Tørt Bygg · Før overtakelse</span>
+              </button>
+              <button type="button" class="service-pick" data-service="skuring" aria-pressed="false">
+                <span class="pick-check" aria-hidden="true">✓</span>
+                <strong>Skuring &amp; boning</strong>
+                <span>Fjerning av gammel voks, maskinell skuring og påføring av slitesterk polish for harde gulv.</span>
+                <span class="pick-tags">Maskinell · Gulvfornying</span>
+              </button>
+              <button type="button" class="service-pick" data-service="flytte" aria-pressed="false">
+                <span class="pick-check" aria-hidden="true">✓</span>
+                <strong>Flyttevask næring</strong>
+                <span>Omfattende utflyttingsrengjøring med skriftlig garanti ved kontraktsavslutning.</span>
+                <span class="pick-tags">Skriftlig garanti · Sluttbefaring</span>
+              </button>
+              <button type="button" class="service-pick" data-service="vindus" aria-pressed="false">
+                <span class="pick-check" aria-hidden="true">✓</span>
+                <strong>Vindusvask</strong>
+                <span>Innvendig og utvendig vask av vindusflater, glassfasader og skillevegger, inkludert karmer.</span>
+                <span class="pick-tags">Rentvannssystem · Uten striper</span>
+              </button>
+              <button type="button" class="service-pick" data-service="fasade" aria-pressed="false">
+                <span class="pick-check" aria-hidden="true">✓</span>
+                <strong>Fasade &amp; graffiti</strong>
+                <span>Høytrykk og kjemisk skånsom vask av mur, tre og platefasader samt fjerning av uønsket tagging.</span>
+                <span class="pick-tags">Miljøvennlig kjemi · Fasadevern</span>
+              </button>
+            </div>
+            <div class="calc-nav">
+              <span></span>
+              <button type="button" class="btn btn-lime" data-goto="2">Neste steg: Om bygget og omfang →</button>
+            </div>
+          </div>
+
+          <!-- STEG 2 -->
+          <div class="calc-step" data-step="2">
+            <p class="eyebrow">Steg 2 av 3</p>
+            <h2>02 // Om bygget</h2>
+            <p class="step-sub">Areal og frekvens — slik kalibrerer vi estimatet</p>
+            <div class="field">
+              <label for="calcArea">Areal (m²)</label>
+              <input type="range" id="calcArea" min="30" max="2500" step="10" value="250" aria-describedby="calcAreaOut">
+              <div class="area-readout"><b id="calcAreaOut">250 m²</b><span>30 – 2 500 m²</span></div>
+            </div>
+            <div class="field">
+              <label for="calcAreaNumber">Areal i m² — skriv inn nøyaktig tall</label>
+              <input type="number" id="calcAreaNumber" min="30" max="2500" step="1" value="250" inputmode="numeric" autocomplete="off">
+              <p class="hint">Mellom 30 og 2 500 m².</p>
+            </div>
+            <div class="field">
+              <label id="freqLabel">Frekvens</label>
+              <div class="freq-group" role="radiogroup" aria-labelledby="freqLabel">
+                <label><input type="radio" name="freq" value="daglig"><span class="freq-pill">Daglig</span></label>
+                <label><input type="radio" name="freq" value="ukentlig" checked><span class="freq-pill">Ukentlig</span></label>
+                <label><input type="radio" name="freq" value="manedlig"><span class="freq-pill">Månedlig</span></label>
+                <label><input type="radio" name="freq" value="engangs"><span class="freq-pill">Engangsoppdrag</span></label>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="calcToilets">Antall toaletter <span style="text-transform:none;letter-spacing:0;font-weight:600;color:var(--grey)">(valgfritt)</span></label>
+                <input type="number" id="calcToilets" min="0" max="200" step="1" value="0" inputmode="numeric" autocomplete="off">
+              </div>
+              <div class="field">
+                <label for="calcKitchens">Antall kjøkken <span style="text-transform:none;letter-spacing:0;font-weight:600;color:var(--grey)">(valgfritt)</span></label>
+                <input type="number" id="calcKitchens" min="0" max="100" step="1" value="0" inputmode="numeric" autocomplete="off">
+              </div>
+            </div>
+            <div class="calc-nav">
+              <button type="button" class="btn btn-outline-dark" data-goto="1">← Tilbake</button>
+              <button type="button" class="btn btn-lime" data-goto="3">Neste steg: Dine opplysninger →</button>
+            </div>
+          </div>
+
+          <!-- STEG 3 -->
+          <div class="calc-step" data-step="3">
+            <p class="eyebrow">Steg 3 av 3</p>
+            <h2>03 // Dine opplysninger</h2>
+            <p class="step-sub">Vi bruker opplysningene kun til å ringe deg tilbake med et nøyaktig tilbud</p>
+            <div class="field">
+              <label for="calcName">Navn *</label>
+              <input type="text" id="calcName" autocomplete="name" placeholder="Ditt fulle navn">
+              <p class="field-error">Skriv inn navnet ditt.</p>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="calcEmail">E-post *</label>
+                <input type="email" id="calcEmail" autocomplete="email" placeholder="navn@bedrift.no">
+                <p class="field-error">Skriv inn en gyldig e-postadresse.</p>
+              </div>
+              <div class="field">
+                <label for="calcPhone">Telefon *</label>
+                <input type="tel" id="calcPhone" autocomplete="tel" placeholder="450 21 429">
+                <p class="field-error">Skriv inn et gyldig telefonnummer (minst 8 siffer).</p>
+              </div>
+            </div>
+            <div class="field">
+              <label for="calcCallback">Ønsket tidspunkt for tilbakeringing</label>
+              <select id="calcCallback">
+                <option>Så fort som mulig</option>
+                <option>I dag</option>
+                <option>I morgen</option>
+                <option>Velg tidspunkt</option>
+              </select>
+            </div>
+            <div class="field" id="callbackTimeWrap" hidden>
+              <label for="calcCallbackTime">Velg tidspunkt *</label>
+              <input type="text" id="calcCallbackTime" placeholder="F.eks. tirsdag kl. 10:00" autocomplete="off">
+              <p class="field-error">Skriv inn ønsket tidspunkt for tilbakeringing.</p>
+            </div>
+
+            <div class="result-panel" id="resultPanel" hidden>
+              <p class="result-label">Veiledende estimat</p>
+              <p class="result-value" id="resultValue">—</p>
+              <p class="result-note">Veiledende estimat — ikke et fast tilbud. Endelig pris avtales etter befaring.</p>
+              <ul class="result-basis">
+                <li><b>Tjeneste</b><span id="basisService">—</span></li>
+                <li><b>Areal</b><span id="basisArea">—</span></li>
+                <li><b>Frekvens</b><span id="basisFreq">—</span></li>
+              </ul>
+              <div class="result-ctas">
+                <button type="submit" class="btn btn-lime">Be om nøyaktig tilbud</button>
+                <button type="button" class="btn btn-outline-light" id="bookCallbackBtn">Book tilbakeringing</button>
+              </div>
+            </div>
+
+            <div class="calc-nav">
+              <button type="button" class="btn btn-outline-dark" data-goto="2">← Tilbake</button>
+            </div>
+          </div>
+
+          <p class="calc-error" id="calcError" hidden role="alert"></p>
+        </form>
+
+        <div class="success-panel" id="successPanel" role="status">
+          <div class="big-tick" aria-hidden="true">✓</div>
+          <h2>Takk! Vi ringer deg tilbake innen 24 timer.</h2>
+          <p>Din henvendelse er mottatt. Vi bekrefter detaljene og avtaler gratis befaring — du får fast kontaktperson.</p>
+          <button type="button" class="btn btn-lime" id="calcAgain">Beregn et nytt estimat</button>
+        </div>
+
+        <p class="after-hours"><strong>Sendt inn etter stengetid?</strong> Vi ringer deg tilbake første virkedag. Våre ordinære åpningstider er mandag–fredag 08:00–17:00.</p>
+
+        <div class="trust-chips">
+          <div class="trust-chip"><b>Kvalitetsgaranti</b><span>Skriftlig garanti på flyttevask.</span></div>
+          <div class="trust-chip"><b>17+ års erfaring</b><span>Etablert i Oslo 2008.</span></div>
+          <div class="trust-chip"><b>Fast vasketeam</b><span>Samme team på hvert oppdrag.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-strip">
+    <div class="wrap">
+      <span><b>Siden 2008</b> (17+ år)</span>
+      <span>Oslo og omegn</span>
+      <span>Rent Tørt Bygg</span>
+      <span>Kvalitetsgaranti på flyttevask</span>
+    </div>
+  </div>
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <h3>Melisa<br>Renholdsservice AS</h3>
+      <p class="footer-quote">«Kvalitet i hver detalj, hver gang.»</p>
+      <p>B2B kommersiell facility service og bedriftsrenhold i Oslo og omegn siden 2008.</p>
+    </div>
+    <nav aria-label="Tjenester i bunnteksten">
+      <h4>Tjenester</h4>
+      <ul class="footer-list">
+        <li><a href="tjenester.html">Daglig renhold</a></li>
+        <li><a href="tjenester.html">Hovedrengjøring</a></li>
+        <li><a href="tjenester.html">Byggvask</a></li>
+        <li><a href="tjenester.html">Skuring og boning</a></li>
+        <li><a href="tjenester.html">Flyttevask</a></li>
+        <li><a href="tjenester.html">Vindusvask</a></li>
+        <li><a href="tjenester.html">Fasadevask</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h4>Kontakt &amp; drift</h4>
+      <ul class="footer-list">
+        <li><strong>Adresse:</strong> <span>Københavngata 14A, 0566 Oslo</span></li>
+        <li><strong>Telefon:</strong> <a href="tel:+4745021429">450 21 429</a></li>
+        <li><strong>E-post:</strong> <a href="mailto:post@melisarenhold.no">post@melisarenhold.no</a></li>
+        <li><strong>Åpningstider:</strong> <span>Man–fre 08:00–17:00</span></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Prisestimat B2B</h4>
+      <p class="footer-note">Få uforpliktende kalkyle tilpasset næringslokaler, borettslag eller byggeplass.</p>
+      <p><a href="prisberegner.html" style="color:var(--lime);font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:13px;text-decoration:none;border-bottom:2px solid var(--lime)">Start prisberegner →</a></p>
+      <h4 style="margin-top:24px">Kvalitetskontroll</h4>
+      <p class="footer-note">Systematisk kontroll og dokumentasjon på hvert oppdrag.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrap">
+      <span>© 2026 Melisa Renholdsservice AS. Alle rettigheter reservert.</span>
+      <span>Henvendelser etter kl. 17:00 besvares påfølgende virkedag.</span>
+    </div>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

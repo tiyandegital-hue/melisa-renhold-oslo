@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Melisa Renholdsservice AS — Rent bygg. Uten å vente. | B2B renhold i Oslo</title>
+<meta name="description" content="Melisa Renholdsservice AS — B2B renhold i Oslo og omegn siden 2008. Få et veiledende prisestimat på 60 sekunder. Daglig renhold, hovedrengjøring, byggvask, flyttevask og mer.">
+<meta property="og:title" content="Melisa Renholdsservice AS — Rent bygg. Uten å vente.">
+<meta property="og:description" content="Få et veiledende prisestimat på 60 sekunder — vi ringer deg tilbake. B2B renhold i Oslo og omegn siden 2008.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230B3D3A'/%3E%3Crect x='6' y='6' width='20' height='20' fill='%23C8F04A'/%3E%3C/svg%3E">
+</head>
+<body>
+<div class="utility">
+  <div class="wrap">
+    <a href="tel:+4745021429">Tlf: 450 21 429</a>
+    <span>Man–fre 08:00–17:00</span>
+    <span>Københavngata 14A, 0566 Oslo</span>
+  </div>
+</div>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="Melisa Renholdsservice AS — forsiden">
+      <span class="brand-eyebrow">B2B Renholdsservice Oslo · Siden 2008</span>
+      <span class="brand-name">MELISA</span>
+      <span class="brand-sub">RENHOLDSSERVICE AS</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav">Meny</button>
+    <nav class="main-nav" id="mainNav" aria-label="Hovedmeny">
+      <a href="index.html" aria-current="page">Hjem</a>
+      <a href="tjenester.html">Tjenester</a>
+      <a href="prisberegner.html">Prisberegner</a>
+      <a href="om-oss.html">Om oss</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+    <a class="btn btn-lime header-cta" href="prisberegner.html">Få prisestimat</a>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero dark" style="padding-bottom:0">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Melisa Renholdsservice AS · Oslo — B2B renhold siden 2008</p>
+        <h1>Rent bygg.<br><span class="lime">Uten å vente.</span></h1>
+        <p class="hero-sub">Få et veiledende prisestimat på 60 sekunder — vi ringer deg tilbake.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-lime" href="prisberegner.html">Start prisberegneren</a>
+          <a class="btn btn-outline-light" href="tjenester.html">Se tjenester</a>
+        </div>
+        <p class="hero-meta">Oslo og omegn · Fast vasketeam · Svar innen 24 timer</p>
+      </div>
+      <form class="teaser" id="teaserForm" action="prisberegner.html" method="get">
+        <p class="teaser-label">Prisberegner</p>
+        <h2>Få svaret nå — ikke i morgen</h2>
+        <div class="field">
+          <label for="teaserService">Hvilken tjeneste trenger du?</label>
+          <select id="teaserService" name="tjeneste">
+            <option value="daglig">Daglig renhold</option>
+            <option value="hoved">Hovedrengjøring</option>
+            <option value="bygg">Byggvask</option>
+            <option value="skuring">Skuring og boning</option>
+            <option value="flytte">Flyttevask</option>
+            <option value="vindus">Vindusvask</option>
+            <option value="fasade">Fasadevask</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="teaserArea">Areal (m²)</label>
+          <input type="range" id="teaserArea" min="50" max="2000" step="10" value="250" aria-describedby="teaserAreaOut">
+          <div class="area-readout"><b id="teaserAreaOut">250 m²</b><span>50 – 2 000 m²</span></div>
+        </div>
+        <div class="teaser-estimate">
+          <p class="est-label">Veiledende estimat — ikke et fast tilbud</p>
+          <p class="est-value"><span id="teaserEstimate">kr 4 700 – kr 6 600</span> <span style="font-size:15px;font-family:var(--body);font-weight:700">eks. mva</span></p>
+          <p class="est-note">Veiledende prisintervall beregnet fra tjeneste og areal. Endelig pris avtales etter befaring.</p>
+        </div>
+        <button class="btn btn-dark btn-block" type="submit">Lås estimat &amp; bestill befaring</button>
+        <p class="teaser-micro">Svar innen 24 timer · Ingen forpliktelser</p>
+      </form>
+    </div>
+    <div class="hero-spacer" aria-hidden="true"></div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <div class="trust">
+    <div class="wrap">
+      <ul class="trust-list">
+        <li>Siden 2008</li>
+        <li>Oslo og omegn</li>
+        <li>Fast vasketeam</li>
+        <li>Kvalitetsgaranti på flyttevask</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="ice">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Våre tjenester</p>
+        <h2>Hva kan vi rengjøre for deg?</h2>
+        <p class="lede">Syv fagområder — én arbeidsmåte: fast team, faste rutiner og systematisk kvalitetskontroll på hvert oppdrag.</p>
+        <div class="rule"></div>
+      </div>
+      <div class="cards-7">
+        <article class="svc-card reveal">
+          <span class="svc-num">01</span>
+          <h3>Daglig renhold</h3>
+          <p>Faste renholdsavtaler for kontorer, butikker og næringsbygg. Fast vasketeam og faste rutiner.</p>
+          <a class="card-link" href="prisberegner.html?tjeneste=daglig">Få prisestimat →</a>
+        </article>
+        <article class="svc-card reveal">
+          <span class="svc-num">02</span>
+          <h3>Hovedrengjøring</h3>
+          <p>Periodisk dybderengjøring fra gulv til tak. Inkluderer ventilasjon, listverk og sanitærsoner.</p>
+          <a class="card-link" href="prisberegner.html?tjeneste=hoved">Få prisestimat →</a>
+        </article>
+        <article class="svc-card reveal">
+          <span class="svc-num">03</span>
+          <h3>Byggvask</h3>
+          <p>Rent Tørt Bygg-leveranse for nybygg og rehabilitering. Ferdig til overtakelse.</p>
+          <a class="card-link" href="prisberegner.html?tjeneste=bygg">Få prisestimat →</a>
+        </article>
+        <article class="svc-card reveal">
+          <span class="svc-num">04</span>
+          <h3>Skuring &amp; boning</h3>
+          <p>Maskinell skuring og boning av harde gulv. Gjenoppretter glans og beskytter overflaten.</p>
+          <a class="card-link" href="prisberegner.html?tjeneste=skuring">Få prisestimat →</a>
+        </article>
+        <article class="svc-card reveal">
+          <span class="svc-num">05</span>
+          <h3>Flyttevask</h3>
+          <p>Utflyttingsvask med skriftlig garanti. Godkjent overtakelse — eller vi retter uten ekstra kostnad.</p>
+          <a class="card-link" href="prisberegner.html?tjeneste=flytte">Få prisestimat →</a>
+        </article>
+        <article class="svc-card reveal">
+          <span class="svc-num">06</span>
+          <h3>Vindusvask</h3>
+          <p>Innvendig og utvendig vask av vinduer, glassfasader og skillevegger. Rentvannsteknologi.</p>
+          <a class="card-link" href="prisberegner.html?tjeneste=vindus">Få prisestimat →</a>
+        </article>
+        <article class="svc-card reveal">
+          <span class="svc-num">07</span>
+          <h3>Fasadevask</h3>
+          <p>Høytrykk og skånsom kjemisk vask av mur, tre og plate. Inkluderer fjerning av graffiti.</p>
+          <a class="card-link" href="prisberegner.html?tjeneste=fasade">Få prisestimat →</a>
+        </article>
+      </div>
+      <div class="cards-more reveal">
+        <a class="btn btn-dark" href="tjenester.html">Se alle tjenester</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="white">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Slik fungerer det</p>
+        <h2>Fra første klikk til rent bygg.</h2>
+        <div class="rule"></div>
+      </div>
+      <div class="steps">
+        <article class="step reveal">
+          <span class="step-num">01</span>
+          <h3>Fortell oss om bygget</h3>
+          <p>Velg tjeneste, areal og frekvens. Tar under 60 sekunder.</p>
+        </article>
+        <article class="step reveal">
+          <span class="step-num">02</span>
+          <h3>Få veiledende prisestimat</h3>
+          <p>Se et veiledende prisintervall med en gang. Ingen ventetid, ingen forpliktelser.</p>
+        </article>
+        <article class="step reveal">
+          <span class="step-num">03</span>
+          <h3>Vi ringer deg tilbake innen 24 timer</h3>
+          <p>Vi bekrefter detaljer og avtaler gratis befaring. Du får fast kontaktperson.</p>
+        </article>
+      </div>
+      <p class="steps-foot reveal">Konkret svar — ikke et skjema som forsvinner.</p>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="dark">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow on-dark">Våre verdier</p>
+        <h2>Kvalitet i hver detalj, hver gang.</h2>
+        <div class="rule"></div>
+      </div>
+      <div class="values-grid">
+        <article class="value-card reveal">
+          <span class="svc-num">01</span>
+          <h3>Pålitelighet</h3>
+          <p>Vi holder det vi lover. Fast team, faste rutiner, faste tider.</p>
+        </article>
+        <article class="value-card reveal">
+          <span class="svc-num">02</span>
+          <h3>Omsorg</h3>
+          <p>Vi tar vare på bygget ditt som om det var vårt eget. Riktig kjemi, riktig metode.</p>
+        </article>
+        <article class="value-card reveal">
+          <span class="svc-num">03</span>
+          <h3>Kvalitet</h3>
+          <p>Systematisk kontroll og dokumentasjon på hvert oppdrag.</p>
+        </article>
+        <article class="value-card reveal">
+          <span class="svc-num">04</span>
+          <h3>Erfaring</h3>
+          <p>17+ år i Oslo. Vi har sett det meste — og løst det før.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="lime-band cta-band">
+    <div class="wrap reveal">
+      <h2>Klar for et renere arbeidsmiljø?</h2>
+      <p>Kontakt oss i dag for en uforpliktende befaring og få et skreddersydd tilbud innen 24 timer.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-dark" href="prisberegner.html">Få prisestimat</a>
+        <a class="btn btn-outline-dark" href="kontakt.html">Kontakt oss</a>
+      </div>
+      <p class="cta-contact"><a href="tel:+4745021429">450 21 429</a> · <a href="mailto:post@melisarenhold.no">post@melisarenhold.no</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-strip">
+    <div class="wrap">
+      <span><b>Siden 2008</b> (17+ år)</span>
+      <span>Oslo og omegn</span>
+      <span>Rent Tørt Bygg</span>
+      <span>Kvalitetsgaranti på flyttevask</span>
+    </div>
+  </div>
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <h3>Melisa<br>Renholdsservice AS</h3>
+      <p class="footer-quote">«Kvalitet i hver detalj, hver gang.»</p>
+      <p>B2B kommersiell facility service og bedriftsrenhold i Oslo og omegn siden 2008.</p>
+    </div>
+    <nav aria-label="Tjenester i bunnteksten">
+      <h4>Tjenester</h4>
+      <ul class="footer-list">
+        <li><a href="tjenester.html">Daglig renhold</a></li>
+        <li><a href="tjenester.html">Hovedrengjøring</a></li>
+        <li><a href="tjenester.html">Byggvask</a></li>
+        <li><a href="tjenester.html">Skuring og boning</a></li>
+        <li><a href="tjenester.html">Flyttevask</a></li>
+        <li><a href="tjenester.html">Vindusvask</a></li>
+        <li><a href="tjenester.html">Fasadevask</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h4>Kontakt &amp; drift</h4>
+      <ul class="footer-list">
+        <li><strong>Adresse:</strong> <span>Københavngata 14A, 0566 Oslo</span></li>
+        <li><strong>Telefon:</strong> <a href="tel:+4745021429">450 21 429</a></li>
+        <li><strong>E-post:</strong> <a href="mailto:post@melisarenhold.no">post@melisarenhold.no</a></li>
+        <li><strong>Åpningstider:</strong> <span>Man–fre 08:00–17:00</span></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Prisestimat B2B</h4>
+      <p class="footer-note">Få uforpliktende kalkyle tilpasset næringslokaler, borettslag eller byggeplass.</p>
+      <p><a href="prisberegner.html" style="color:var(--lime);font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:13px;text-decoration:none;border-bottom:2px solid var(--lime)">Start prisberegner →</a></p>
+      <h4 style="margin-top:24px">Kvalitetskontroll</h4>
+      <p class="footer-note">Systematisk kontroll og dokumentasjon på hvert oppdrag.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrap">
+      <span>© 2026 Melisa Renholdsservice AS. Alle rettigheter reservert.</span>
+      <span>Henvendelser etter kl. 17:00 besvares påfølgende virkedag.</span>
+    </div>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
